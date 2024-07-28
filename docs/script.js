@@ -76,4 +76,3 @@ document.addEventListener("DOMContentLoaded", function() {
     const initialPage = pages[currentSection] ? pages[currentSection][0] : "python_intro";
     loadContent(initialPage);
 });
-
