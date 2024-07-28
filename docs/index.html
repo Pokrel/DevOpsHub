@@ -3,37 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps work reference</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="images/favicon.ico">
-    <title>Documentation Site</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div class="topnav">
         <a href="index.html">
             <img src="images/logo.png" alt="Logo" class="logo">
         </a>
+        <a href="devops.html">DevOps</a>
+        <a href="git.html">Git</a>
+        <a href="linux.html">Linux</a>
+        <a href="ansible.html">Ansible</a>
         <a href="python.html">Python</a>
-        <a href="css.html">CSS</a>
-        <a href="javascript.html">JavaScript</a>
-        <a href="sql.html">SQL</a>
-        <a href="numpy.html">NumPy</a>
     </div>
+
     <div class="sidebar">
-        <h2>Home</h2>
-        <ul>
-            <li><a href="pages/home_intro.html">Introduction</a></li>
+        <h2>DocQueen</h2>
+        <ul id="sidebar-list">
             <li><a href="pages/about.html">About</a></li>
-            <li><a href="pages/policy.html">Policy</a></li>
             <li><a href="pages/contribute.html">Contribute</a></li>
+            <li><a href="pages/policy.html">Policy</a></li>
         </ul>
     </div>
+
     <div class="main-content">
-        <div id="content"></div>
+        <div id="content">
+            <!-- Python intro page is the default content -->
+            <h2>Welcome to Real time work reference Website</h2>
+            <p>This is the place where commands cheat-sheet, issue resolution and ideas are organized for real time work references.</p>
+        </div>
         <div class="navigation-buttons">
-            <button id="prev-button" style="display: none;">Previous</button>
-            <button id="next-button" style="display: none;">Next</button>
+            <button id="prev-button">Previous</button>
+            <button id="next-button">Next</button>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>

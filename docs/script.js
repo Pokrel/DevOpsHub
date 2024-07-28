@@ -1,17 +1,19 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const content = document.getElementById("content");
-    const topnavLinks = document.querySelectorAll(".topnav a");
-    let currentSection = "home";
-    
     const pages = {
-        home: ["home_intro", "about", "policy", "contribute"],
-        python: ["python_intro", "python_syntax", "python_comments", "python_variables"],
-        css: ["css_intro", "css_syntax", "css_selectors", "css_colors"],
-        javascript: ["js_intro", "js_syntax", "js_variables", "js_functions"],
-        sql: ["sql_intro", "sql_syntax", "sql_select", "sql_insert"],
-        numpy: ["numpy_intro", "numpy_array", "numpy_math", "numpy_random"]
+        index: ["about", "contribute", "policy"],
+        devops: ["devops_intro", "continuous_integration", "continuous_delivery", "jenkins"],
+        git: ["git_intro", "github"],
+        linux: ["linux_intro", "redhat", "centos", "ubuntu"],
+        ansible: ["ansible_intro", "adhoc_commands", "simple_project"],
+        python: ["python_intro", "python_get_started", "python_syntax", "python_comments"]
+        // Add more sections and pages here
     };
 
+    const content = document.getElementById("content");
+    const sidebarLinks = document.querySelectorAll(".sidebar ul li a");
+    const currentSection = window.location.pathname.split("/").pop().replace(".html", "");
+
+    // Function to load content
     function loadContent(page) {
         fetch(`pages/${page}.html`)
             .then(response => response.text())
@@ -23,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
             .catch(error => content.innerHTML = "<p>Page not found.</p>");
     }
 
+    // Update the navigation buttons based on the current page
     function updateNavigationButtons(currentPage) {
         const sectionPages = pages[currentSection] || [];
         const currentIndex = sectionPages.indexOf(currentPage);
@@ -44,8 +47,8 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
+    // Highlight the current topic in the sidebar
     function highlightCurrentTopic(currentPage) {
-        const sidebarLinks = document.querySelectorAll(".sidebar ul li a");
         sidebarLinks.forEach(link => {
             const page = link.getAttribute("href").split("/").pop().replace(".html", "");
             if (page === currentPage) {
@@ -56,28 +59,16 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    function highlightCurrentMenu() {
-        topnavLinks.forEach(link => {
-            const section = link.getAttribute("href").split("/").pop().replace(".html", "");
-            if (section === currentSection) {
-                link.classList.add("active");
-            } else {
-                link.classList.remove("active");
-            }
-        });
-    }
-
-    topnavLinks.forEach(link => {
+    // Add click event listeners to sidebar links
+    sidebarLinks.forEach(link => {
         link.addEventListener("click", function(event) {
             event.preventDefault();
-            currentSection = this.getAttribute("href").split("/").pop().replace(".html", "");
-            highlightCurrentMenu();
-            const firstPage = pages[currentSection] ? pages[currentSection][0] : "home_intro";
-            loadContent(firstPage);
+            const page = this.getAttribute("href").split("/").pop().replace(".html", "");
+            loadContent(page);
         });
     });
 
-    const initialPage = pages[currentSection] ? pages[currentSection][0] : "home_intro";
+    // Load the initial page if any, or default to the first page of the current section
+    const initialPage = pages[currentSection] ? pages[currentSection][0] : "about";
     loadContent(initialPage);
-    highlightCurrentMenu();
 });
