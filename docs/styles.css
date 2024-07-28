@@ -13,20 +13,20 @@ body {
     width: 100%;
     top: 0;
     z-index: 1000;
-    height: 50px; /* Adjust the height here */
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .topnav a {
-    float: none; /* Remove float to center the menu */
+    float: none;
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 0 16px; /* Adjust padding if needed */
+    padding: 0 16px;
     text-decoration: none;
-    line-height: 50px; /* Adjust line-height to match the height */
+    line-height: 50px;
 }
 
 .topnav a.active {
@@ -41,7 +41,7 @@ body {
 
 .topnav .logo {
     height: 40px;
-    padding: 5px 10px; /* Adjust padding to fit within the height */
+    padding: 5px 10px;
 }
 
 .sidebar {
@@ -50,8 +50,8 @@ body {
     width: 250px;
     background-color: #222;
     position: fixed;
-    top: 50px; /* Adjust based on the height of the topnav */
-    height: calc(100% - 50px); /* Adjust based on the height of the topnav */
+    top: 50px;
+    height: calc(100% - 50px);
     overflow: auto;
 }
 
@@ -68,10 +68,14 @@ body {
     padding: 0;
 }
 
+.sidebar ul li {
+    padding: 8px;
+    text-align: center;
+}
+
 .sidebar ul li a {
     display: block;
     color: #f2f2f2;
-    padding: 8px 16px;
     text-decoration: none;
 }
 
@@ -86,16 +90,11 @@ body {
 }
 
 .main-content {
-    margin-left: 260px;
-    padding: 20px;
-    padding-top: 70px; /* Adjust padding to ensure content is not hidden behind topnav */
-}
-
-#content {
-    background-color: #444;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-left: 250px;
+    padding: 15px;
+    margin-top: 50px;
+    overflow: auto;
+    height: calc(100vh - 50px);
 }
 
 .navigation-buttons {
@@ -104,15 +103,19 @@ body {
     margin-top: 20px;
 }
 
-.navigation-buttons button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
+button {
     padding: 10px 20px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
     cursor: pointer;
-    border-radius: 5px;
 }
 
-.navigation-buttons button:hover {
+button:hover {
     background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
 }
