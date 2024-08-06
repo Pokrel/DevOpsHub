@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const pages = {
         index: ["about", "contribute", "policy"],
         devops: ["devops_intro", "continuous_integration", "continuous_delivery", "jenkins"],
-        git: ["git_intro", "github"],
+        git: ["git_intro", "github", "git_cheatsheet"],
         linux: ["linux_intro", "redhat", "centos", "ubuntu"],
         ansible: ["ansible_intro", "adhoc_commands", "simple_project"],
         python: ["python_intro", "python_get_started", "python_syntax", "python_comments"]
