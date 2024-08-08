@@ -2,7 +2,7 @@
 
 ## About the Project
 
-Welcome to the DevOps Resource Hub, an open-source platform designed to serve as a comprehensive resource for IT engineers including DevOps engineers, System administrators, SREs, and Full Stack developers. Our goal is to create a collaborative space where professionals can find real-time work reference documentation, cheat-sheets, bug fixes, and much more.
+Welcome to the DevOps Resource Hub, an open-source platform aim to become a comprehensive resource for IT engineers including DevOps engineers, System administrators, SREs, and Full Stack developers. Goal is to create a collaborative space where professionals can find real-time work reference documentation, cheat-sheets, bug fixes, and much more.
 
 ### Key Features
 - **Real-time Work References**: Up-to-date and practical documentation.
@@ -10,7 +10,7 @@ Welcome to the DevOps Resource Hub, an open-source platform designed to serve as
 - **Bug Fixes**: Solutions to frequent issues encountered in day-to-day operations.
 
 ### Focus Areas
-Our website primarily focuses on DevOps tools and technologies such as:
+The Website primarily focuses on DevOps tools and technologies such as:
 - **CI/CD Pipeline**: Efficient and automated deployment workflows.
 - **Jenkins**: Continuous integration and delivery.
 - **Linux**: System administration and scripting.
