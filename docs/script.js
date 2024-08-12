@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
         git: ["git_intro", "github", "git_cheatsheet"],
         linux: ["linux_intro", "redhat", "centos", "ubuntu"],
         ansible: ["ansible_intro", "adhoc_commands", "simple_project"],
-        python: ["python_intro", "python_get_started", "python_syntax", "python_comments"]
+        aws: ["aws_intro", "aws_services", "aws_cli", "aws_cheatsheets"]
         // Add more sections and pages here
     };
 
