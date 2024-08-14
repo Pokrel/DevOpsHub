@@ -39,8 +39,12 @@ body {
     color: white;
 }
 
+img.logo {
+    width: 150px;
+    height: auto;
+}
+
 .topnav .logo {
-    height: 40px;
     padding: 2px 10px; /* Adjust padding to fit within the height */
 }
 
