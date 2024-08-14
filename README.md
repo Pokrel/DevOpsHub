@@ -1,7 +1,5 @@
 # Welcome to DevOps Resource Hub 🌐
 ![DOH_Logo](https://github.com/user-attachments/assets/605d640f-158e-4fda-8e91-82a32c35c9fe)
-
-
 ## About the Project
 
 Welcome to the DevOps Resource Hub, an open-source platform aim to become a comprehensive resource for IT engineers including DevOps engineers, System administrators, SREs, and Full Stack developers. Goal is to create a collaborative space where professionals can find real-time work reference documentation, cheat-sheets, bug fixes, and much more.
