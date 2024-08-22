@@ -5,7 +5,8 @@ document.addEventListener("DOMContentLoaded", function() {
         git: ["git_intro", "github", "git_cheatsheet"],
         linux: ["linux_intro", "redhat", "centos", "ubuntu"],
         ansible: ["ansible_intro", "adhoc_commands", "simple_project"],
-        aws: ["aws_intro", "aws_services", "aws_cli", "aws_cheatsheets", "aws_diagram"]
+        aws: ["aws_intro", "aws_services", "aws_cli", "aws_cheatsheets", "aws_diagram"],
+        terraform: ["terraform_intro", "terraform_setup", "terraform_core_concept", "terraform_demo_project", "terraform_provisioners", "terraform_modules", "terraform_remote_state", "terraform_best_practices"]
         // Add more sections and pages here
     };
 
