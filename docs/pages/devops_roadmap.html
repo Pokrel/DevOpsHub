@@ -1,0 +1,156 @@
+<h2><span style="color:#ff1100;">Roadmap</span></h2>
+<p>&nbsp;</p>
+<p><strong>From which background are you transitioning into DevOps?</strong></p>
+<ol>
+    <li>System administrator</li>
+    <li>Software developer</li>
+    <li>Test automation engineer</li>
+    <li>Network engineer</li>
+    <li>OR, with just a little IT knowledge</li>
+</ol>
+<p>Depending on which background and pre-knowledge you have, you need to first make sure to get any missing prerequisite knowledge.</p>
+<p>As a system administrator or a network engineer, learn software development workflows. As a developer, learn the basics of infrastructure, virtual servers etc. Of course, with zero or little IT background, you have to get all this prerequisite knowledge from server administration to development first.</p>
+<p>&nbsp;</p>
+<img src="images/cicd-pipeline.PNG" alt="CI/CD pipeline example">
+<p>&nbsp;</p>
+<p>DevOps covers the whole software development lifecycle, so you work with lots of different tools and technologies. Plus, DevOps is still evolving and there are lots of new tools being developed all the time.</p>
+<p>&nbsp;</p>
+<h2><span style="color:#ff1100;"><strong>Start here:</strong></span></h2>
+<p>&nbsp;</p>
+<h3><span style="color:#15ff00;"><strong>1. Concepts of Software Development</strong></span></h3>
+<p>As a DevOps engineer you will not be programming the application, but as you are working closely with the development team to improve and automate tasks for them, you need to understand the concepts of:</p>
+<ul>
+    <li>How developers work and collaborate (Agile, Jira workflows)</li>
+    <li>What Git workflow they use</li>
+    <li>How applications are configured (Build &amp; packaging tools)</li>
+    <li>Automated testing and test scopes</li>
+</ul>
+<p>And generally understand what the whole software development lifecycle covers from idea to code, all the way to releasing it to end users.</p>
+<p>&nbsp;</p>
+<h3><span style="color:#15ff00;">2. OS &amp; Linux Basics</span></h3>
+<p>As a DevOps engineer you are responsible for preparing and maintaining the infrastructure (servers) on which the application is deployed. So you need to know the basics of how to administer a server and install different tools on it.</p>
+<p>Since most servers use Linux OS, you need to know and feel comfortable using Linux, especially its Command Line Interface. Basic concepts of Operating Systems you need to understand:</p>
+<ul>
+    <li>Shell Commands</li>
+    <li>Linux File System &amp; Permissions</li>
+    <li>SSH Key Management</li>
+    <li>Virtualization</li>
+</ul>
+<p>You also need to know the basics of Networking &amp; Security in order to configure the infrastructure.</p>
+<ul>
+    <li>Configure Firewalls to secure access</li>
+    <li>Understand how IP addresses, ports and DNS works</li>
+    <li>Load Balancers</li>
+    <li>Proxies</li>
+    <li>HTTP/HTTPS</li>
+</ul>
+<p>&nbsp;</p>
+<h3><span style="color:#15ff00;">3. Containerization - Docker</span></h3>
+<p>Docker is by far the most popular container technology.</p>
+<p>As containers have become the new standard of software packaging, you will most probably run your application as a container. This means you need to generally understand:</p>
+<ul>
+    <li>Concepts of virtualization</li>
+    <li>Concepts of containerization</li>
+    <li>How to manage containerized applications on a server</li>
+</ul>
+<p>A container is a standard unit of software that packages up code and all its dependencies so that the application runs quickly and reliably in any computing environment. Things you should know:</p>
+<ul>
+    <li>Run containers</li>
+    <li>Inspect active containers</li>
+    <li>Docker Networking</li>
+    <li>Persist data with Docker Volumes</li>
+    <li>Dockerize apps using Dockerfiles</li>
+    <li>Run multiple containers using Docker-Compose</li>
+    <li>Work with Docker Repository</li>
+</ul>
+<p>&nbsp;</p>
+<h3><span style="color:#15ff00;">4. CI/CD Pipelines - Jenkins</span></h3>
+<p>CI/CD is kind of the heart of DevOps. In DevOps, all code changes, like new features or bug fixes, need to be integrated into the existing application and deployed to the end users continuously and in an automated way. Hence, the term: Continuous Integration and Continuous Deployment (CI/CD).</p>
+<p>When the feature or bug-fix is done, a pipeline running on a CI server (e.g. Jenkins) should be triggered automatically, which:</p>
+<ol>
+    <li>Runs the tests</li>
+    <li>Packages the application</li>
+    <li>Builds a container Image</li>
+    <li>Pushes the container Image to an image repository</li>
+    <li>deploy the new version to a server</li>
+</ol>
+<p>There are many CI/CD platforms out there, such as - GitLab, GitHub Actions, Travis CI, Bamboo, TeamCity. The most popular one currently is Jenkins.</p>
+<p>&nbsp;</p>
+<p>Skills you need to have:</p>
+<ul>
+    <li>Setting up the CI/CD server</li>
+    <li>Integrate code repository to trigger pipeline automatically</li>
+    <li>Build Tool &amp; Package Manager Tools to execute the test and package the application</li>
+    <li>Configuring artifact repositories (like Nexus) and integrate with pipeline</li>
+</ul>
+<p>&nbsp;</p>
+<h3><span style="color:#15ff00;">5. Learn One Cloud Provider - AWS</span></h3>
+<p>Some popular Cloud platforms are - AWS, Microsoft Azure, Google Cloud. AWS is the most powerful and most widely used IaaS platform, but also a difficult one.</p>
+<p>Nowadays, many companies use virtual infrastructure on the cloud, instead of managing their own infrastructure. These are Infrastructure as a Service (IaaS) platforms, which offer a range of additional services, like backup, security, load balancing etc.</p>
+<p>&nbsp;</p>
+<p>These services are platform-specific. So you need to learn the services of that specific platform and learn how to manage the whole deployment infrastructure on it.</p>
+<p>Example, for AWS you should know the fundamentals of:</p>
+<ul>
+    <li>IAM service - managing users and permissions</li>
+    <li>VPC service - your private network</li>
+    <li>EC2 service - virtual servers</li>
+</ul>
+<p>&nbsp;</p>
+<h3><span style="color:#15ff00;">6. Container Orchestration - Kubernetes</span></h3>
+<p>Since containers are popular and easy to use, many companies are running hundreds or thousands of containers on multiple servers. This means these containers need to be managed somehow. For this purpose, there are container orchestration tools.</p>
+<p>Kubernetes (also known as K8s) is the most popular container orchestration tool. Kubernetes automates the deployment, scaling and management of containerized applications.</p>
+<p>So you need to learn:</p>
+<ul>
+    <li>How Kubernetes works</li>
+    <li>How to administer and manage the K8s cluster</li>
+    <li>How to deploy applications on K8s</li>
+</ul>
+<p>Specific K8s knowledge needed:</p>
+<ul>
+    <li>Learn core components like, Deployment, Service, ConfigMap, Secret, StatefulSet, Ingress Kubernetes</li>
+    <li>CLI (Kubectl) Persisting data with K8s Volumes</li>
+    <li>Namespaces</li>
+</ul>
+<p>&nbsp;</p>
+<h3><span style="color:#15ff00;">7. Monitoring &amp; Observability - Prometheus &amp; Grafana</span></h3>
+<p>Once software is in production, it is important to monitor it to track the performance, discover problems in your infrastructure and the application.</p>
+<p>So one of your responsibilities as a DevOps engineer is to:</p>
+<ul>
+    <li>Setup software monitoring</li>
+    <li>Setup infrastructure monitoring, e.g. for your Kubernetes cluster and underlying servers</li>
+    <li>Visualize the data</li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>Prometheus:</strong> A popular monitoring and alerting tool.</p>
+<p><strong>Grafana: </strong>Analytics and interactive visualization tool.</p>
+<p>You should also understand how systems can collect and aggregate data with the goal of using it to troubleshoot, gain business insights etc.</p>
+<p><strong>ELK Stack:</strong> A popular log management stack.</p>
+<p>&nbsp;</p>
+<h3><span style="color:#15ff00;">8. Infrastructure as Code - Ansible &amp; Terraform</span></h3>
+<p>Manually creating and maintaining infrastructure is time consuming and error prone. Especially when you need to replicate the infrastructure, e.g. for a Development, Testing and Production environment.</p>
+<p>In DevOps, we want to automate as much as possible and that's where Infrastructure as Code comes into the picture.</p>
+<p>With IaC we use code to create and configure infrastructure and there are 2 types of IaC tools you need to know:</p>
+<ol>
+    <li>Infrastructure provisioning</li>
+    <li>Configuration management</li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>Terraform:</strong> This is the most popular infrastructure provisioning tool.</p>
+<p><strong>Ansible: </strong>This is the most popular configuration management tool.</p>
+<p>&nbsp;</p>
+<h3><span style="color:#15ff00;">9. Scripting Language - Python</span></h3>
+<p>Since you are closely working with developers and system administrators to also automate tasks for development and operations, you will need to write scripts and small applications to automate them. For that, you will need some scripting or basic programming skills.</p>
+<p>Examples: utility scripts like flushing the cache, starting the builds and deployments etc.</p>
+<p>This could be an OS specific scripting language like bash or Powershell. But what's more demanded is an OS-independent language like Python, Ruby or Go.</p>
+<p>These languages are more powerful and flexible. If you know one of these, it will make you much more valuable as a DevOps engineer.</p>
+<p>There are many programming languages, but I would recommend starting with Python. Python is widely used, easy to learn and used in many different cases, especially in DevOps.</p>
+<p>&nbsp;</p>
+<h3><span style="color:#15ff00;">10. Version Control - Git</span></h3>
+<p>You write all automation logic as code. And just application code, automation code should also be managed and hosted on a version control tool, like Git.</p>
+<p>Git is a CLI Tool, which you install locally. It enables the tracking of changes in the source code and enables better collaboration on code.</p>
+<p>So you need to learn:</p>
+<ul>
+    <li>The core Git commands, like git clone, git branch, git pull/push, git merge etc.</li>
+    <li>But also how to collaborate on a project, like create pull requests, code reviews, branching.</li>
+</ul>
+<p>Your files are stored centrally in a remote Git repository on the web. The most popular Git repositories are GitHub and GitLab.</p>
